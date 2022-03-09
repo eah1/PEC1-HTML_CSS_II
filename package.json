@@ -9,7 +9,9 @@
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
-    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
+    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
+    "stylelint": "stylelint src/**/*.scss",
+    "htmlvalidate": "node_modules/.bin/html-validate src/**/*.html"
   },
   "web": "dist/index.html",
   "targets": {
@@ -37,12 +39,18 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.2.0",
     "autoprefixer": "^10.4.2",
+    "html-validate": "^6.5.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.2.0",
     "postcss-preset-env": "^7.3.1",
     "posthtml-include": "^1.7.2",
     "rimraf": "^3.0.2",
-    "sharp": "^0.29.3"
+    "sharp": "^0.29.3",
+    "stylelint": "^14.5.3",
+    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-config-standard": "^25.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0"
+  }
 }
