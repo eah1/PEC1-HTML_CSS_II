@@ -1,0 +1,28 @@
+%default-header {
+  font-family: $font-family-headers;
+  font-size: $font-size-headers;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: $header-color;
+  clear: right;
+
+  @include responsive(mobile) {
+    font-size: $font-size-headers-mobile;
+  }
+  @include responsive(tablet) {
+    font-size: $font-size-headers-mobile;
+  }
+}
+
+%flex-container {
+  display: flex;
+}
+
+%flex-column {
+  flex-direction: column;
+}
+
+%flex-centered {
+  justify-content: center;
+}
