@@ -29,6 +29,19 @@
   }
 }
 
+%default-subheader {
+  font-family: $font-family-content;
+  font-size: $font-size-subheaders;
+  font-weight: 500;
+
+  @include responsive(mobile) {
+    font-size: $font-size-subheaders-mobile;
+  }
+  @include responsive(tablet) {
+    font-size: $font-size-subheaders-mobile;
+  }
+}
+
 %default-link {
   @extend %default-content;
   color: $link-color;

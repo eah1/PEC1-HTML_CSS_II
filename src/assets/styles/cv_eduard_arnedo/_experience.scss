@@ -1,0 +1,46 @@
+.experiences {
+  &__experience-item {
+    border-bottom: 3px solid darkcyan;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+
+    @include responsive(mobile) {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  &__experience-item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.experience {
+  &__title {
+    @extend %default-subheader;
+  }
+  &__timespan {
+    @extend %default-content;
+  }
+  &__description {
+    @extend %default-content;
+  }
+  &__keywords {
+    @extend %default-content;
+    list-style-type: none;
+    display: block;
+  }
+}
+
+.keyword {
+  &__item {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    display: inline-block;
+    background-color: darkcyan;
+    color: white;
+    padding: 0.5rem;
+  }
+  &__item:first-of-type {
+    margin-left: 0;
+  }
+}
