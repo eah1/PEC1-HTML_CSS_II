@@ -15,6 +15,26 @@
   }
 }
 
+%default-content {
+  font-family: $font-family-content;
+  font-size: $font-size-content;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+
+  @include responsive(mobile) {
+    font-size: $font-size-content-mobile;
+  }
+  @include responsive(tablet) {
+    font-size: $font-size-content-mobile;
+  }
+}
+
+%default-link {
+  @extend %default-content;
+  color: $link-color;
+  text-decoration: underline;
+}
+
 %flex-container {
   display: flex;
 }

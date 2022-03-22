@@ -15,4 +15,26 @@
   @include responsive(tablet) {
     width: 90vw;
   }
+
+  &__title {
+    @extend %default-header;
+  }
+
+  &__icon {
+    font-size: $font-size-headers;
+    width: 3rem;
+    display: inline-block;
+    color: $header-color;
+  }
+
+  &__content {
+    @extend %default-content;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+    @include responsive(mobile) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
