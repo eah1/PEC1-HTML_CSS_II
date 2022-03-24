@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.8",
     "@namics/stylelint-bem": "^7.0.0",
     "@parcel/transformer-sass": "^2.3.2",
     "autoprefixer": "^10.4.2",
@@ -43,8 +44,5 @@
     "stylelint-scss": "^4.2.0"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.16.11",
-    "@fortawesome/fontawesome-free": "^6.1.0",
-    "@fortawesome/fontawesome-free-webfonts": "^1.0.9"
   }
 }
